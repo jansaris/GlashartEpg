@@ -1,1 +1,9 @@
 C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\GlashartEpg.exe.config
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\GlashartEpg.exe
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\GlashartEpg.pdb
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\log4net.dll
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\log4net.xml
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\obj\Debug\GlashartEpg.exe
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\obj\Debug\GlashartEpg.pdb
