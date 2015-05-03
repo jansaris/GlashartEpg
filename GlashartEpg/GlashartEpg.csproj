@@ -53,9 +53,14 @@
   <ItemGroup>
     <Compile Include="Configuration.cs" />
     <Compile Include="EpgDownloader.cs" />
-    <Compile Include="EpgObject.cs" />
+    <Compile Include="EpgGuideFile.cs" />
+    <Compile Include="EpgGuideJsonReader.cs" />
+    <Compile Include="LocalEpgDownloader.cs" />
     <Compile Include="IConfiguration.cs" />
+    <Compile Include="IEpgDownloader.cs" />
     <Compile Include="LogSetup.cs" />
+    <Compile Include="Models\Channel.cs" />
+    <Compile Include="Models\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

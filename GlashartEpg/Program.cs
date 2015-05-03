@@ -4,10 +4,20 @@ using log4net;
 
 namespace GlashartEpg
 {
-    class Program
+    public class Program
     {
         private static readonly ILog Logger = LogManager.GetLogger(typeof(Program));
-        private Configuration _config;
+        private readonly Configuration _config;
+        private readonly IEpgDownloader _epgDownloader;
+        private readonly EpgGuideJsonReader _epgGuideJsonReader;
+
+        public Program()
+        {
+            _config = new Configuration();
+            _epgDownloader = new LocalEpgDownloader(_config);
+            _epgGuideJsonReader = new EpgGuideJsonReader(_config, _epgDownloader);
+            
+        }
 
         static void Main(params string[] args)
         {
@@ -36,7 +46,6 @@ namespace GlashartEpg
         private void LoadConfiguration()
         {
             Logger.Info("Read configuration");
-            _config = new Configuration();
             _config.Load();
             Logger.Debug("Test data folder");
             var dir = new DirectoryInfo(_config.DataFolder);
@@ -46,14 +55,7 @@ namespace GlashartEpg
         private void DownloadGuide()
         {
             Logger.InfoFormat("Start downloading the guide at {0}", _config.EpgUrl);
-            var downloader = new EpgDownloader(_config);
-            downloader.DownloadedPart += downloader_DownloadedPart;
-            downloader.Download();
-        }
-
-        void downloader_DownloadedPart(object sender, EpgObject e)
-        {
-            Logger.InfoFormat("Parse data of {0}",e.UnzippedFile);
+            _epgDownloader.Download();
         }
     }
 }

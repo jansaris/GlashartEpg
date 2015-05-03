@@ -9,16 +9,17 @@ using log4net;
 
 namespace GlashartEpg
 {
-    public class EpgDownloader
+    public class EpgDownloader : IEpgDownloader
     {
         private static readonly ILog Logger = LogManager.GetLogger(typeof(EpgDownloader));
 
-        private readonly string _url;
-        private readonly int _days;
-        private readonly DirectoryInfo _folder;
-        public event EventHandler<EpgObject> DownloadedPart;
+        private string _url;
+        private int _days;
+        private DirectoryInfo _folder;
+        private readonly IConfiguration _config;
+        public event EventHandler<EpgGuideFile> DownloadedPart;
 
-        protected virtual void OnDownloadedPart(EpgObject e)
+        protected virtual void OnDownloadedPart(EpgGuideFile e)
         {
             var handler = DownloadedPart;
             if (handler != null) handler(this, e);
@@ -26,19 +27,51 @@ namespace GlashartEpg
 
         public EpgDownloader(IConfiguration config)
         {
-            _url = config.EpgUrl;
-            _days = config.Days;
-            _folder = new DirectoryInfo(Path.Combine(config.DataFolder, "EpgDownloader"));
+            _config = config;
         }
 
         public void Download()
         {
+            LoadSettings();
             if(!_folder.Exists) _folder.Create();
             var data = GenerateList();
             DownloadList(data);
         }
 
-        private void DownloadList(IEnumerable<EpgObject> data)
+        public string DownloadDetails(Models.Program program)
+        {
+            var url = GenerateDetailsUrl(program.Id);
+            if (string.IsNullOrWhiteSpace(url)) return null;
+
+            try
+            {
+                using (var webClient = new WebClient())
+                {
+                    return webClient.DownloadString(url);
+                }
+            }
+            catch (WebException ex)
+            {
+                Logger.Info(string.Format("Failed to download details for {0} with id {1}", program.Name, program.Id), ex);
+                return null;
+            }
+        }
+
+        private string GenerateDetailsUrl(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id) || id.Length < 2) return null;
+            var dir = id.Substring(id.Length - 2, 2);
+            return string.Format("{0}/{1}/{2}.json", _url, dir, id);
+        }
+
+        private void LoadSettings()
+        {
+            _url = _config.EpgUrl;
+            _days = _config.Days;
+            _folder = new DirectoryInfo(Path.Combine(_config.DataFolder, "EpgDownloader"));
+        }
+
+        private void DownloadList(IEnumerable<EpgGuideFile> data)
         {
             data.AsParallel().ForAll(obj =>
             {
@@ -52,7 +85,7 @@ namespace GlashartEpg
             });
         }
 
-        // Extracts the file contained within a GZip to the target dir.
+        // Evxtracts the file contained within a GZip to the target dir.
         // A GZip can contain only one file, which by default is named the same as the GZip except
         // without the extension.
         //
@@ -124,17 +157,17 @@ namespace GlashartEpg
 
 
         //w.zt6.nl/epgdata/epgdata.yyyyMMdd.?.json.gz
-        private IEnumerable<EpgObject> GenerateList()
+        private IEnumerable<EpgGuideFile> GenerateList()
         {
             Logger.DebugFormat("Start generating a list of EpgObjects for {0} days",_days);
-            var list = new List<EpgObject>();
+            var list = new List<EpgGuideFile>();
             var now = DateTime.Now;
             var end = DateTime.Now.AddDays(_days);
             var count = 0;
             while (now < end)
             {
                 var date = now.ToString("yyyyMMdd");
-                list.AddRange(Enumerable.Range(0, 8).Select(nr => new EpgObject
+                list.AddRange(Enumerable.Range(0, 8).Select(nr => new EpgGuideFile
                 {
                     Id = count + nr,
                     Url = string.Format("{0}epgdata.{1}.{2}.json.gz",_url,date,nr),

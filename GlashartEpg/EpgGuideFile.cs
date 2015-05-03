@@ -1,6 +1,6 @@
 ﻿namespace GlashartEpg
 {
-    public class EpgObject
+    public class EpgGuideFile
     {
         public int Id { get; set; }
         public string Url { get; set; }
