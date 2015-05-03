@@ -1,1 +1,105 @@
 15:27:34.002 - INFO - Weclome to Glashart EPG grabber
+15:46:12.094 - INFO - Weclome to Glashart EPG grabber
+15:46:12.101 - INFO - Read GlashartEpg.ini
+15:46:12.125 - FATAL - An unhandled error occured
+System.Exception: Failed to load the configuration ---> System.IO.FileNotFoundException: Could not find file 'C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\GlashartEpg.ini'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at GlashartEpg.Configuration.Load() in c:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\Configuration.cs:line 17
+   --- End of inner exception stack trace ---
+   at GlashartEpg.Configuration.Load() in c:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\Configuration.cs:line 29
+   at GlashartEpg.Program.LoadConfiguration() in c:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\Program.cs:line 35
+   at GlashartEpg.Program.Run() in c:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\Program.cs:line 28
+   at GlashartEpg.Program.Main() in c:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\Program.cs:line 17
+15:58:19.440 - INFO - Weclome to Glashart EPG grabber
+15:58:19.448 - INFO - Read configuration
+15:58:19.449 - INFO - Read GlashartEpg.ini
+15:58:19.451 - DEBUG - Process line DataFolder=./Data
+15:58:19.454 - DEBUG - Read configuration item DataFolder with value ./Data
+15:58:19.454 - DEBUG - Process line EpgUrl=http://w.zt6.nl/epgdata/
+15:58:19.455 - DEBUG - Read configuration item EpgUrl with value http://w.zt6.nl/epgdata/
+15:58:19.455 - DEBUG - Process line Days=7
+15:58:19.455 - DEBUG - Read configuration item Days with value 7
+15:58:19.456 - INFO - Start downloading the guide at http://w.zt6.nl/epgdata/
+16:00:35.684 - INFO - Weclome to Glashart EPG grabber
+16:00:35.702 - INFO - Read configuration
+16:00:35.703 - INFO - Read GlashartEpg.ini
+16:00:35.704 - DEBUG - Process line DataFolder=./Data
+16:00:35.706 - DEBUG - Read configuration item DataFolder with value ./Data
+16:00:35.706 - DEBUG - Process line EpgUrl=http://w.zt6.nl/epgdata/
+16:00:35.706 - DEBUG - Read configuration item EpgUrl with value http://w.zt6.nl/epgdata/
+16:00:35.706 - DEBUG - Process line Days=7
+16:00:35.706 - DEBUG - Read configuration item Days with value 7
+16:00:35.707 - DEBUG - Test data folder
+16:00:35.707 - INFO - Start downloading the guide at http://w.zt6.nl/epgdata/
+16:14:23.318 - INFO - Weclome to Glashart EPG grabber
+16:14:23.328 - INFO - Read configuration
+16:14:23.329 - INFO - Read GlashartEpg.ini
+16:14:23.330 - DEBUG - Process line DataFolder=./Data
+16:14:23.334 - DEBUG - Read configuration item DataFolder with value ./Data
+16:14:23.334 - DEBUG - Process line EpgUrl=http://w.zt6.nl/epgdata/
+16:14:23.334 - DEBUG - Read configuration item EpgUrl with value http://w.zt6.nl/epgdata/
+16:14:23.334 - DEBUG - Process line Days=7
+16:14:23.335 - DEBUG - Read configuration item Days with value 7
+16:14:23.335 - DEBUG - Test data folder
+16:14:23.336 - INFO - Start downloading the guide at http://w.zt6.nl/epgdata/
+16:14:23.340 - DEBUG - Start generating a list of EpgObjects for 7 days
+16:14:23.423 - DEBUG - Generated a list of 28 epg files to download
+16:14:23.425 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150507.2.json.gz
+16:14:23.425 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150507.3.json.gz
+16:14:23.425 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.3.json.gz
+16:14:23.426 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.4.json.gz
+16:14:23.425 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150507.4.json.gz
+16:14:23.427 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150508.1.json.gz
+16:14:23.427 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150508.2.json.gz
+16:14:23.427 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150508.3.json.gz
+16:14:23.426 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.4.json.gz
+16:14:23.428 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.1.json.gz
+16:14:23.429 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.2.json.gz
+16:14:23.429 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.3.json.gz
+16:14:23.429 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.4.json.gz
+16:14:23.429 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150507.1.json.gz
+16:14:23.426 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150504.1.json.gz
+16:14:23.430 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150504.2.json.gz
+16:14:23.430 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150504.3.json.gz
+16:14:23.431 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150504.4.json.gz
+16:14:23.425 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.1.json.gz
+16:14:23.431 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.1.json.gz
+16:14:23.432 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.2.json.gz
+16:14:23.427 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150508.4.json.gz
+16:14:23.431 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.2.json.gz
+16:14:23.433 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.3.json.gz
+16:14:23.433 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.4.json.gz
+16:14:23.433 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.1.json.gz
+16:14:23.434 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.2.json.gz
+16:14:23.434 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.3.json.gz
+16:21:24.270 - INFO - Weclome to Glashart EPG grabber
+16:21:24.276 - INFO - Read configuration
+16:21:24.277 - INFO - Read GlashartEpg.ini
+16:21:24.278 - DEBUG - Process line DataFolder=./Data
+16:21:24.282 - DEBUG - Read configuration item DataFolder with value ./Data
+16:21:24.282 - DEBUG - Process line EpgUrl=http://w.zt6.nl/epgdata/
+16:21:24.282 - DEBUG - Read configuration item EpgUrl with value http://w.zt6.nl/epgdata/
+16:21:24.283 - DEBUG - Process line Days=7
+16:21:24.283 - DEBUG - Read configuration item Days with value 7
+16:21:24.283 - DEBUG - Test data folder
+16:21:24.284 - INFO - Start downloading the guide at http://w.zt6.nl/epgdata/
+16:21:24.288 - DEBUG - Start generating a list of EpgObjects for 7 days
+16:21:24.318 - DEBUG - Generated a list of 28 epg files to download
+16:21:24.321 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.1.json.gz
+16:21:24.321 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150507.2.json.gz
+16:21:24.321 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.4.json.gz
+16:21:24.321 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.3.json.gz
+16:21:45.489 - ERROR - Failed to download http://w.zt6.nl/epgdata/epgdata.20150507.2.json.gz
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 82.139.120.179:80
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadData(Uri address)
+   at System.Net.WebClient.DownloadData(String address)
+   at GlashartEpg.EpgDownloader.DownloadFile(String url) in c:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\EpgDownloader.cs:line 66
+16:21:45.494 - INFO - Start downloading http://w.zt6.nl/epgdata/epgdata.20150507.3.json.gz

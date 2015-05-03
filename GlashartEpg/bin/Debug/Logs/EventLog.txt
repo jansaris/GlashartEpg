@@ -1,0 +1,33 @@
+2015-05-02 18:29:38,900 INFO  GlashartEpg.Program - Weclome to Glashart EPG grabber
+2015-05-02 18:29:42,527 INFO  GlashartEpg.Program - Read configuration
+2015-05-02 18:29:42,543 INFO  GlashartEpg.Configuration - Read GlashartEpg.ini
+2015-05-02 18:29:43,043 INFO  GlashartEpg.Program - Start downloading the guide at http://w.zt6.nl/epgdata/
+2015-05-02 18:29:43,137 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.4.json.gz
+2015-05-02 18:29:43,137 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.0.json.gz
+2015-05-02 18:29:43,137 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.0.json.gz
+2015-05-02 18:29:43,137 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.4.json.gz
+2015-05-02 18:30:21,866 INFO  GlashartEpg.Program - Weclome to Glashart EPG grabber
+2015-05-02 18:32:07,272 INFO  GlashartEpg.Program - Weclome to Glashart EPG grabber
+2015-05-02 18:32:18,099 INFO  GlashartEpg.Program - Read configuration
+2015-05-02 18:32:18,099 INFO  GlashartEpg.Configuration - Read GlashartEpg.ini
+2015-05-02 18:32:18,099 INFO  GlashartEpg.Program - Start downloading the guide at http://w.zt6.nl/epgdata/
+2015-05-02 18:32:18,145 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.4.json.gz
+2015-05-02 18:32:18,145 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.4.json.gz
+2015-05-02 18:32:18,145 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.0.json.gz
+2015-05-02 18:32:18,145 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.0.json.gz
+2015-05-02 18:33:07,363 INFO  GlashartEpg.Program - Weclome to Glashart EPG grabber
+2015-05-02 18:33:07,410 INFO  GlashartEpg.Program - Read configuration
+2015-05-02 18:33:07,410 INFO  GlashartEpg.Configuration - Read GlashartEpg.ini
+2015-05-02 18:33:07,410 INFO  GlashartEpg.Program - Start downloading the guide at http://w.zt6.nl/epgdata/
+2015-05-02 18:33:07,457 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.0.json.gz
+2015-05-02 18:33:07,457 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.4.json.gz
+2015-05-02 18:33:07,457 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.4.json.gz
+2015-05-02 18:33:07,457 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.0.json.gz
+2015-05-02 18:59:04,347 INFO  GlashartEpg.Program - Weclome to Glashart EPG grabber
+2015-05-02 18:59:04,378 INFO  GlashartEpg.Program - Read configuration
+2015-05-02 18:59:04,378 INFO  GlashartEpg.Configuration - Read GlashartEpg.ini
+2015-05-02 18:59:04,378 INFO  GlashartEpg.Program - Start downloading the guide at http://w.zt6.nl/epgdata/
+2015-05-02 18:59:04,409 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150506.4.json.gz
+2015-05-02 18:59:04,409 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150502.0.json.gz
+2015-05-02 18:59:04,409 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150505.0.json.gz
+2015-05-02 18:59:04,409 INFO  GlashartEpg.EpgDownloader - Start downloading http://w.zt6.nl/epgdata/epgdata.20150503.4.json.gz

@@ -7,3 +7,7 @@ C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\log4net.xml
 C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\obj\Debug\GlashartEpg.exe
 C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\obj\Debug\GlashartEpg.pdb
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\GlashartEpg.ini
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\ICSharpCode.SharpZipLib.Portable.dll
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\ICSharpCode.SharpZipLib.Portable.pdb
+C:\Users\Jan\Documents\GitHub\GlashartEpg\GlashartEpg\bin\Debug\ICSharpCode.SharpZipLib.Portable.xml
